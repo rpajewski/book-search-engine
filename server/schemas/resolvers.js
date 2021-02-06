@@ -25,12 +25,6 @@ const resolvers = {
             return User.find()
             .select('-__v -password')
             .populate('savedBooks')
-        },
-        savedBooks: async (parent, { username }) => {
-
-        },
-        book: async (parent, { bookId }) => {
-            
         }
     },
     Mutation: {
